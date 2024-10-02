@@ -3,12 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const gilroySemiBold = localFont({
-  src: "./fonts/GilroySemiBold.woff2",
+  // src: "./fonts/GilroySemiBold.woff2",
+  src: "../public/fonts/GilroySemiBold.woff2",
   variable: "--gilroySemiBold",
   weight: "100 900",
 });
 const gilroyMedium = localFont({
-  src: "./fonts/GilroyMedium.woff2",
+  // src: "./fonts/GilroyMedium.woff2",
+  src: "../public/fonts/GilroyMedium.woff2",
   variable: "--gilroyMedium",
   weight: "100 900",
 });

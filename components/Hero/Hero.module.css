@@ -1,0 +1,89 @@
+.container {
+  background-color: var(--blue);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.heading,
+.copy {
+  color: var(--white);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.words {
+  border: 1px dashed var(--white);
+  border-radius: 10px;
+  padding: 0rem 3rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  width: fit-content;
+  height: 110px;
+}
+
+.span {
+  display: block;
+  height: 100%;
+  color: var(--blue2);
+  font-size: 9rem;
+  font-family: var(--gilroySemiBold);
+  letter-spacing: -3.7px;
+  animation: spin_words 8s infinite  
+}
+
+.copy {
+  width: 60%;
+}
+
+.lottieBox {
+  width: 100%;
+  height: 550px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-103%)
+  }
+  25% {
+    transform: translateY(-100%)
+  }
+  35% {
+    transform: translateY(-203%)
+  }
+  50% {
+    transform: translateY(-200%)
+  }
+  60% {
+    transform: translateY(-303%)
+  }
+  75% {
+    transform: translateY(-300%)
+  }
+  85% {
+    transform: translateY(-403%)
+  }
+  100% {
+    transform: translateY(-400%)
+  }
+}
