@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const gilroySemiBold = localFont({
+  src: "./fonts/GilroySemiBold.woff2",
+  variable: "--gilroySemiBold",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const gilroyMedium = localFont({
+  src: "./fonts/GilroyMedium.woff2",
+  variable: "--gilroyMedium",
   weight: "100 900",
 });
 
@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang='en'>
+      <body className={`${gilroySemiBold.variable} ${gilroyMedium.variable}`}>
         {children}
       </body>
     </html>
