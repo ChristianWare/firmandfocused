@@ -3,8 +3,8 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
 import Arrow from "../../public/icons/arrow.svg";
+import Button from "../Button/Button";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,15 +85,7 @@ function Nav() {
             </li>
           ))}
           <div className={styles.btnContainer}>
-            {/* <Button
-              btnType='navBtn'
-              text='Download My Resume'
-              href='/ChrisWareResume2024.pdf'
-              target='_blank'
-              download={true}
-              arrow
-              iconColor='blue'
-            /> */}
+            <Button btnType='primary' text='Request Demo' href='/' />
           </div>
         </ul>
         {isOpen && (
