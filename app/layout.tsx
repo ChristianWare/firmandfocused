@@ -8,10 +8,18 @@ const gilroySemiBold = localFont({
   variable: "--gilroySemiBold",
   weight: "100 900",
 });
+
 const gilroyMedium = localFont({
   // src: "./fonts/GilroyMedium.woff2",
   src: "../public/fonts/GilroyMedium.woff2",
   variable: "--gilroyMedium",
+  weight: "100 900",
+});
+
+const gilroyRegular = localFont({
+  // src: "./fonts/GilroyMedium.woff2",
+  src: "../public/fonts/GilroyRegular.ttf",
+  variable: "--gilroyRegular",
   weight: "100 900",
 });
 
@@ -27,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${gilroySemiBold.variable} ${gilroyMedium.variable}`}>
+      <body
+        className={`${gilroySemiBold.variable} ${gilroyMedium.variable} ${gilroyRegular.variable}`}
+      >
         {children}
       </body>
     </html>

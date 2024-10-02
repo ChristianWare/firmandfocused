@@ -11,7 +11,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--gilroyMedium);
+  font-family: var(--gilroyRegular);
   overscroll-behavior: none;
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
@@ -95,7 +95,7 @@ textarea {
   font-weight: 500;
   line-height: 144%;
   border: none;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.5px;
 }
 
 input:focus,

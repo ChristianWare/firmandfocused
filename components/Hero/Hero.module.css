@@ -43,7 +43,7 @@
   font-size: 9rem;
   font-family: var(--gilroySemiBold);
   letter-spacing: -3.7px;
-  animation: spin_words 8s infinite  
+  animation: spin_words 6s infinite;
 }
 
 .copy {
@@ -60,30 +60,56 @@
   width: 100%;
 }
 
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .left {
+    align-items: center;
+  }
+
+  .heading,
+  .copy,
+  .span {
+    text-align: center;
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+}
 
 @keyframes spin_words {
+  0% {
+    transform: translateY(0%);
+  }
   10% {
-    transform: translateY(-103%)
+    transform: translateY(-100%);
+    transition-timing-function: ease-in-out;
   }
   25% {
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
   35% {
-    transform: translateY(-203%)
+    transform: translateY(-200%);
+    transition-timing-function: ease-in-out;
   }
   50% {
-    transform: translateY(-200%)
+    transform: translateY(-200%);
   }
   60% {
-    transform: translateY(-303%)
+    transform: translateY(-300%);
+    transition-timing-function: ease-in-out;
   }
   75% {
-    transform: translateY(-300%)
+    transform: translateY(-300%);
   }
   85% {
-    transform: translateY(-403%)
+    transform: translateY(-400%);
+    transition-timing-function: ease-in-out;
   }
   100% {
-    transform: translateY(-400%)
+    transform: translateY(-400%);
   }
 }
