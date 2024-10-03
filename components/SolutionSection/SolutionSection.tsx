@@ -1,9 +1,12 @@
+import LayoutWrapper from "../LayoutWrapper";
 import styles from "./SolutionSection.module.css";
 
 const SolutionSection = () => {
   return (
     <section className={styles.container}>
-      <h2>Solutions Section</h2>
+      <LayoutWrapper>
+        <h2>Solutions Section</h2>
+      </LayoutWrapper>
     </section>
   );
 };

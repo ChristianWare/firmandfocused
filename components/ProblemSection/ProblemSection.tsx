@@ -5,7 +5,7 @@ import Reminders from "../../public/icons/seo.svg";
 import Clock from "../../public/icons/clock.svg";
 import Card from "../../public/icons/payment.svg";
 import LayoutWrapper from "../LayoutWrapper";
-import Author from "../../public/images/img1.jpg";
+import Ponder from "../../public/images/ponder.png";
 
 const ProblemSection = () => {
   const data = [
@@ -45,17 +45,6 @@ const ProblemSection = () => {
           </p>
         </div>
         <div className={styles.bottom}>
-          <div className={styles.left}>
-            <div className={styles.imgContainer}>
-              <Image
-                src={Author}
-                alt=''
-                layout='fill'
-                objectFit='cover'
-                className={styles.img}
-              />
-            </div>
-          </div>
           <div className={styles.right}>
             {data.map((x, index) => (
               <div key={index} className={styles.card}>
@@ -64,6 +53,21 @@ const ProblemSection = () => {
                 <p className={styles.description}>{x.description}</p>
               </div>
             ))}
+          </div>
+          <div className={styles.left}></div>
+        </div>
+        <div className={styles.bottom2}>
+          <div className={styles.b2Left}></div>
+          <div className={styles.b2Right}>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Ponder}
+                alt=''
+                layout='fill'
+                objectFit='cover'
+                className={styles.img}
+              />
+            </div>
           </div>
         </div>
       </LayoutWrapper>
