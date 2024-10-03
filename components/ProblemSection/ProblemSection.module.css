@@ -75,17 +75,6 @@
   text-transform: none;
 }
 
-.bottom2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.b2Right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .imgContainer {
   position: relative;
   width: 235px;

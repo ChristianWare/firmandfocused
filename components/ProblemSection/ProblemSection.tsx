@@ -54,11 +54,7 @@ const ProblemSection = () => {
               </div>
             ))}
           </div>
-          <div className={styles.left}></div>
-        </div>
-        <div className={styles.bottom2}>
-          <div className={styles.b2Left}></div>
-          <div className={styles.b2Right}>
+          <div className={styles.left}>
             <div className={styles.imgContainer}>
               <Image
                 src={Ponder}
@@ -70,6 +66,7 @@ const ProblemSection = () => {
             </div>
           </div>
         </div>
+        
       </LayoutWrapper>
     </section>
   );

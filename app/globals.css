@@ -2,7 +2,9 @@
   --black: #232269;
   --blue: #3f3cd5;
   --blue2: #2ee9ff;
-  --lightBorder: #8C6DF4;
+  --blue3: #16165c;
+  --lightBlue: #00b2ff;
+  --lightBorder: #8c6df4;
   --white: #ffffff;
 }
 
@@ -23,7 +25,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 /* 
 ::-webkit-scrollbar {
@@ -61,11 +63,13 @@ h1 {
 
 h2 {
   font-size: 6rem;
+  line-height: 100%;
 }
 
 h3 {
-  font-size: 2.6rem;
-  line-height: 130%;
+  font-size: 4.5rem;
+  letter-spacing: -1.8px;
+  line-height: 95%;
   font-weight: 600;
 }
 
@@ -91,12 +95,12 @@ p,
 input,
 textarea {
   /* hyphens: auto; */
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
   line-height: 144%;
   border: none;
-  letter-spacing: -0.5px;
+  /* letter-spacing: -0.2px; */
 }
 
 input:focus,
